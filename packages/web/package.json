@@ -15,7 +15,7 @@
     "start": "concurrently \"npm run compile -- -w --incremental\" \"npm run _start\"",
     "_start": "react-app-rewired start",
     "prebuild": "npm run compile",
-    "build": "react-app-rewired build",
+    "build": "react-app-rewired build --openssl-legacy-provider",
     "pretest": "npm run compile",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
